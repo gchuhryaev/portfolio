@@ -27,6 +27,9 @@ body {
   font-style: normal;
   font-weight: 400;
 }
+section {
+  padding: 140 0;
+}
 .container {
   max-width: 1200px;
   width: 100%;
@@ -73,13 +76,13 @@ body {
   color: darkcyan;
 }
 .home__inner {
-  position: absolute;
+  height: calc(100vh - 218px);
   top: 50%;
   display: flex;
   flex-direction: column;
-  max-width: 640;
+  max-width: 640px;
   width: 100%;
-  justify-content: flex-start;
+  justify-content: center;
   font-size: 48px;
 }
 .home__name {
@@ -122,3 +125,66 @@ body {
     top: 40px;
   }
 }
+.title {
+  display: flex;
+  line-height: 60px;
+  font-size: 48px;
+  padding-bottom: 30px;
+}
+.about {
+  padding: 140px 0;
+}
+.about__me {
+  flex-direction: column;
+}
+.about__item {
+  margin-bottom: 30px;
+}
+.skill {
+  background-color: #F6F6F8;
+  padding: 140px 0;
+  max-width: 1920px;
+  max-height: 852px;
+}
+.skill-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.portrait {
+  margin-right: 15px;
+  width: 415px;
+  height: 450px;
+}
+.skills {
+  
+}
+.bars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 85px;
+}
+.progress-bar {
+  background-color:#DBDBED;
+  height: 32px;
+  width: 600px;
+ }
+ .progress-bar span {
+  display: inline-block;
+ }  
+ .blue span {
+  background-color: #2352DE;
+  height: 32px;
+  width: 510px;
+ }
+ .text-bar {
+  font-size: 18px;
+  text-align: left;
+  width: 50px;
+  margin: 15px;
+ }
+ 
+
+ 
+ 
