@@ -156,9 +156,6 @@ section {
   width: 415px;
   height: 450px;
 }
-.skills {
-  
-}
 .bars {
   display: flex;
   justify-content: space-between;
@@ -184,7 +181,15 @@ section {
   width: 50px;
   margin: 15px;
  }
- 
-
- 
- 
+.service-title {
+  font-size: 48px;
+}
+.service-text {
+  font-size: 28px;
+}
+.service-about {
+  font-size: 16px;
+}
+.service-list {
+  display: inline;
+}
