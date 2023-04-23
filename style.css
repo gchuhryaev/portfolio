@@ -278,6 +278,10 @@ section {
   width: 275px;
   height: 275px;
 }
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+}
 .contacts__info {
   padding-top: 60px;
 }
@@ -291,4 +295,50 @@ section {
   padding-right: 30px;
   width: 75px;
   height: 75px;
+}
+.contacts__form {
+  display: flex;
+}
+.big_form {
+  display: flex;
+}
+.form {
+  display: inline-block;
+  padding-bottom: 30px;
+  padding-right: 30px;
+}
+input {
+  border: none;
+}
+.form__item{
+  width: 255px;
+  height: 44px;
+  background-color:#F6F6F8;
+}
+.message__form {
+  padding-top: 30px;
+}
+.message {
+  color: #Ffffff;
+  text-align: center;
+  background-color:#2352DE;
+  width: 148px;
+  height: 47px;
+}
+.other__form__item {
+  background-color:#F6F6F8;
+  width: 540px;
+  height: 115px;
+}
+h5 {
+  padding-bottom: 10px;
+}
+.footer {
+  margin-top: 140px;
+  width: 1920px;
+  height: 153px;
+  background-color: #343740;
+}
+.footer__logo {
+  padding: 50px 500px;
 }
