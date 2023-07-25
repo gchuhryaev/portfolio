@@ -249,13 +249,10 @@ section {
 }
 
 .text-bar{
+  padding-right: 30px;
+}
 
-}
-@media only screen and (max-width:375px){
-  .text-bar {
-    padding-left: 10px;
-  }
-}
+
 
 .skill-inner {
   display: flex;
@@ -304,22 +301,14 @@ section {
   align-items: center;
   padding-bottom: 85px;
 }
-@media screen and (max-width:375px) {
+
+@media only screen and (max-width:768px){  
   .bars {
-    width: 350px;
-    padding-bottom: 30px;
-    align-items: center;
-    padding-right: 30px;
-}
-}
-@media screen and (max-width: 1024px){
-  .bars{
-    max-width: 600px;
+    max-width: 350px;
     width: 100%;
     padding-bottom: 30px;
   }
-}
-
+ }
 .progress-bar {
   background-color:#DBDBED;
   height: 32px;
@@ -330,18 +319,11 @@ section {
     width: 300px;
   }
 }
- @media only screen and (max-width:768px){  
-  .bars {
-    max-width: 450px;
-    width: 100%;
-    padding-bottom: 30px;
-  }
- }
  .progress-bar span {
   display: inline-block;
  }  
  .blue span {
-  background-color: #2352DE;
+  background-color: black;
   height: 32px;
   width: 510px;
  }
@@ -407,16 +389,24 @@ section {
 	text-align: center;
 }
 .project__item {
-  width: 360px;
-  height: 180px;
+  max-width: 360px;
+  width: 100%;
+  max-height: 180px;
+  height: 100%;
   position: relative;
   z-index: 1;
   margin: 20px auto;
 }
 @media only screen and (max-width:800px){  
   .project__item {
-    width: 180px;
-    height: 90px;
+    max-width: 180px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width:375px){  
+  .project__item {
+    width: 120px;
+    height: 120px;
   }
 }
 .project__item:before,
@@ -451,16 +441,13 @@ section {
   opacity: 1;
   visibility: visible;
 }
+
 .project__list{
 	display: grid;
 	grid-template-columns: repeat(2,1fr);
 	gap: 45px;
 }
-@media only screen and (max-width:375px){  
-  .project__list {
-    grid-template-columns: repeat(1,1fr);
-  }
-}
+
 .project__item img{	
 	max-width: 360px;
 	width: 100%;
@@ -536,6 +523,9 @@ section {
     height: 100%;
   }
 }
+.contacts {
+  padding-bottom: 140px;
+}
 .contacts__inner {
   display: flex;
   justify-content: space-between;
@@ -564,7 +554,7 @@ section {
 }
 .contacts__number {
   padding-bottom: 15px;
-  color:#2352DE;
+  color: black;
 }
 .contacts__item {
   padding-right: 30px;
@@ -609,7 +599,7 @@ input {
 .message {
   color: #Ffffff;
   text-align: center;
-  background-color:#2352DE;
+  background-color: black;
   width: 148px;
   height: 47px;
 }
@@ -637,7 +627,6 @@ footer {
   padding: 115px 0;
   text-align: center;
   align-items: center;
-  padding-top: 140px;
   background-color: #343740;
 }
 .menu-btn {
