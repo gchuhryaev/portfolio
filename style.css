@@ -33,7 +33,6 @@ section {
 .container {
   max-width: 1200px;
   width: 100%;
-  padding: 0 15px;
   margin: 0 auto;
 }
 .home {
@@ -223,6 +222,11 @@ section {
     padding: 90px 0;
   }
 }
+@media screen and (max-width: 992px){
+  .about{
+    padding-left: 25px;
+  }
+}
 .about__me {
   flex-direction: column;
 }
@@ -235,19 +239,15 @@ section {
   padding: 140px 0;
   max-width: 1920px;
   max-height: 852px;
+  padding-left: 30px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 540px) {
   .skill{
     padding: 90px 0;
+    padding-left: 5px;
 }
 }
-@media only screen and (max-width:530px){
-  .skill {
-    padding: 90px 0;
-  }
-}
-
 .text-bar{
   padding-right: 30px;
 }
@@ -301,12 +301,54 @@ section {
   align-items: center;
   padding-bottom: 85px;
 }
-
+@media only screen and (max-width: 992px){
+  .bars {
+    padding-bottom: 30px;
+    padding-right: 30px;
+    max-width: 625px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 320px){
+  .bars {
+    max-width: 300px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
 @media only screen and (max-width:768px){  
   .bars {
-    max-width: 350px;
-    width: 100%;
+    padding-right: 20px;
+    width: 350px;
+    padding-top: 30px;
     padding-bottom: 30px;
+  }
+ }
+ @media only screen and (max-width:540px){  
+  .bars {
+    padding-right: 20px;
+    width: 275px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+ }
+ @media only screen and (max-width:375px){  
+  .bars {
+    padding-right: 20px;
+    width: 350px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+ }
+ @media only screen and (max-width:480px){  
+  .bars {
+    width: 400px;
+  }
+ }
+ @media only screen and (max-width:390px){  
+  .bars {
+    width: 350px;
   }
  }
 .progress-bar {
@@ -338,11 +380,13 @@ section {
  }
 .service-list {
   display: flex;
+  padding-left: 30px;
+  align-items: baseline;
   justify-content: space-between;
 }
-@media only screen and (max-width:530px){
+@media only screen and (max-width:540px){
   .service-list {
-    flex-direction: column;
+    display: grid;
   }
 }
 .service-text {
@@ -358,12 +402,14 @@ section {
   display: flex;
   max-width: 330px;
   width: 100%;
+  padding-right: 20px;
   flex-direction: column;
 }
 @media only screen and (max-width:375px){
   .service-item {
     max-width: 375px;
     width: 100%;
+    padding-left: 30px;
   }
 }
 .codeicon {
@@ -399,14 +445,13 @@ section {
 }
 @media only screen and (max-width:800px){  
   .project__item {
-    max-width: 180px;
-    width: 100%;
+    max-width: 200px;
+    width: 70%;
   }
 }
 @media only screen and (max-width:375px){  
   .project__item {
-    width: 120px;
-    height: 120px;
+    width: 200px;
   }
 }
 .project__item:before,
@@ -421,7 +466,20 @@ section {
   opacity: 0;
   visibility: hidden;
 }
-
+@media only screen and (max-width:768px){  
+  .project__item::after, 
+  .project__item:before{
+    width: 100px;
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 540px){
+.project__item::after, 
+.project__item:before {
+    width: 65px;
+    height: 65px;
+}
+}
 .project__item:before {
   right: -5px;
   top: -5px;
@@ -435,7 +493,11 @@ section {
   border-right: none;
   border-top: none;
 }
-
+@media only screen and (max-width:768px){  
+  .project__item::after {
+    bottom: +40px;
+  }
+}
 .project__item:hover:before,
 .project__item:hover:after {
   opacity: 1;
@@ -447,8 +509,19 @@ section {
 	grid-template-columns: repeat(2,1fr);
 	gap: 45px;
 }
-
-.project__item img{	
+@media screen and (max-width: 320px){
+.project__list {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+@media screen and (max-width: 375px){
+  .project__list {
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+  .project__item img{	
 	max-width: 360px;
 	width: 100%;
 }
@@ -461,24 +534,32 @@ section {
   /* flex-wrap: wrap; */
 }
 @media screen and (max-width: 768px){
-  .results {
-    padding-left: 20px;
-  }
-}
-@media screen and (max-width: 768px){
   .results{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 15px;
     justify-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media screen and (max-width: 992px){
+  .results{
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }
 
 .results__img {
   padding-top: 50px
 }
+@media screen and (max-width: 390px){
+  .results__img{
+    padding-top: 80px;
+  }
+}
 .result-name {
-  font-size: 18px;
+  font-size: 15px;
   text-align: center;
   padding-top: 20px;
   padding-top: 20px;
@@ -492,9 +573,10 @@ section {
   white-space: nowrap;
   text-align: center;
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 390px){
   .result-text{
     font-size: 22px;
+    padding-bottom: 70px
   }
 }
 .results-item {
@@ -511,17 +593,9 @@ section {
 }
 @media screen and (max-width: 375px){
 .results-item {
-    max-width: 150px;
+    max-width: 126px;
     width: 100%;
 }
-}
-@media screen and (max-width: 480px){
-  .results-item{
-    max-width: 200px;
-    width: 100%;
-    max-height: 200px;
-    height: 100%;
-  }
 }
 .contacts {
   padding-bottom: 140px;
@@ -530,11 +604,18 @@ section {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 992px) {
+  .contacts__inner {
+    display: flex;
+    padding-left: 30px;
+    flex-direction: column-reverse;
+  }
+  }
 @media screen and (max-width: 768px) {
 .contacts__inner {
   display: flex;
+  padding-left: 30px;
   flex-direction: column-reverse;
-  padding-left: 100px;
 }
 }
 @media screen and (max-width: 375px) {
@@ -546,6 +627,7 @@ section {
   }
 .contacts__connection {
   padding-bottom: 30px;
+  padding-top: 30px;
 }
 @media screen and (max-width: 768px) {
   .contacts__connection {
@@ -613,12 +695,26 @@ input {
   height: 115px;
   max-width: 540px;
 }
-@media screen and (max-width: 480px){
-  .results-other__form__item{
-    height: 90px;
+@media screen and (max-width:992px){
+  .other__form__item {
+    width: 540px;
+  }
+}
+@media screen and (max-width: 320px){
+.other__form__item {
     width: 250px;
   }
 }
+@media screen and (max-width: 540px){
+  .other__form__item {
+      width: 400px;
+    }
+  }
+@media screen and (max-width: 390px){
+    .other__form__item {
+        width: 250px;
+      }
+    }
 h5 {
   padding-bottom: 10px;
 }
@@ -631,6 +727,20 @@ footer {
 }
 .menu-btn {
 	display: none;
+}
+@media screen and (max-width:992px) {
+	.menu-btn {
+		background-color: transparent;
+		border: none;
+		outline: none;
+		display: block;
+		width: 30px;
+		height: 30px;
+		position: relative;
+		z-index: 2;
+		overflow: hidden;
+		margin-left: 20px;
+	}
 }
 @media screen and (max-width:768px) {
 	.menu-btn {
