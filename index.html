@@ -208,8 +208,8 @@
         <div class="contacts__inner">
         <div class="contacts__info">
           <p class="contacts__connection">
-            Связаться со мной можно, воспользовавшись контактной формой<br>или
-            напрямую по номеру телефона, email, в соцсетях:
+            Зв'язатися зі мною можна, скориставшись контактною формою або
+            безпосередньо за номером телефону, email, у соцмережах:
           </p>
           <p class="contacts__number"><a href="#">+380635265867</a></p>
           <p class="contacts__number"><a href="#">gchuhryaev@gmail.com</a></p>
@@ -228,17 +228,17 @@
           >
           <div class="form">
             <h5>Ваше ім'я</h5>
-            <input class="form__item" type="text" name="name" placeholder="Напишіть ім'я" required="required" />
+            <input class="form__item" type="text" name="name" required placeholder="Напишіть ім'я" required="required" />
           </div>
-          <div class="form">
+          <div class="form__two">
             <h5>Номер телефона</h5>
-            <input class="form__item" type="text" name="number" placeholder="+38 (050) 111 11 11" required="required"/>
+            <input class="form__item" type="text" name="phone" required placeholder="+38 (050) 111 11 11" required="required"/>
           </div> 
           <div class="other__form">
             <h5>Ваше повідомлення</h5>
-            <textarea class="other__form__item" type="text" placeholder="Напишіть повідомлення" name="message"></textarea> </textarea>
+            <textarea class="other__form__item" type="text" required name="message" placeholder="Напишіть повідомлення" name="message"></textarea> </textarea>
           <div class="message__form">
-            <input type="submit" class="message" name="submit_btn" value="Надіслати" />
+            <input type="submit" class="message" value="Надіслати" />
           </div>
           </div>
           </form>
@@ -253,4 +253,5 @@
     </footer>   
   </body>
   <script src="./index.js"></script>
-</html> 
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </html> 
